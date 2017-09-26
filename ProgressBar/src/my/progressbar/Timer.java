@@ -12,13 +12,8 @@ import javax.swing.SwingWorker;
  * @author katrinaeaton
  */
 public class Timer extends SwingWorker<Timer, Void> {
-//    public void countDown() {
-//        SwingWorker worker = new SwingWorker<Timer, Void>(){
 
     @Override
-//    protected Timer doInBackground<Timer, Void>(){
-//    }
-    
     protected Timer doInBackground(){
         
         Timer countDown = new Timer();

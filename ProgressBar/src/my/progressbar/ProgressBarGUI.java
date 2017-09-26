@@ -47,11 +47,6 @@ public class ProgressBarGUI extends javax.swing.JFrame {
 
         jProgressBar1.setCursor(new java.awt.Cursor(java.awt.Cursor.WAIT_CURSOR));
         jProgressBar1.setStringPainted(true);
-        jProgressBar1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                jProgressBar1PropertyChange(evt);
-            }
-        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -110,7 +105,7 @@ public class ProgressBarGUI extends javax.swing.JFrame {
             public void propertyChange(PropertyChangeEvent evt) {
                 String name = evt.getPropertyName();
 //                if (name == "Half way there!"){
-                    System.out.println("property change");
+                System.out.println("property change");
 //                    jProgressBar1.setString(name);
 //                }
                 if (name.equals("progress")) {
@@ -153,10 +148,6 @@ public class ProgressBarGUI extends javax.swing.JFrame {
 //            }
 //        }
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jProgressBar1PropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_jProgressBar1PropertyChange
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jProgressBar1PropertyChange
 
     /**
      * @param args the command line arguments
